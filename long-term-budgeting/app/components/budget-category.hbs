@@ -1,0 +1,25 @@
+<div class="budget-category">
+  <h2>Budget Category</h2>
+  <form>
+    <label for="category-name">Category Name:</label>
+    <input type="text" id="category-name" value={{this.category.name}} />
+
+    <label for="allocated-amount">Allocated Amount:</label>
+    <input type="number" id="allocated-amount" value={{this.category.allocatedAmount}} />
+
+    <label for="expected-spending">Expected Spending:</label>
+    <input type="number" id="expected-spending" value={{this.category.expectedSpending}} />
+
+    <label for="remaining-amount">Remaining Amount:</label>
+    <input type="number" id="remaining-amount" value={{this.category.remainingAmount}} />
+
+    <button type="submit">Save</button>
+  </form>
+
+  <h3>Monthly Overview</h3>
+  <ul>
+    {{#each this.months as |month|}}
+      <li>{{month.name}}: Allocated: {{month.allocated}}, Expected: {{month.expected}}, Remaining: {{month.remaining}}</li>
+    {{/each}}
+  </ul>
+</div>

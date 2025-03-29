@@ -1,0 +1,33 @@
+<div class="account-tracker">
+  <h2>Account Tracker</h2>
+  <ul>
+    {{#each this.accounts as |account|}}
+      <li>
+        <strong>{{account.name}}</strong>: ${{account.balance}}
+      </li>
+    {{/each}}
+  </ul>
+  <button {{on "click" this.addAccount}}>Add Account</button>
+</div>
+
+<div class="budget-categories">
+  <h2>Budget Categories</h2>
+  <ul>
+    {{#each this.budgetCategories as |category|}}
+      <li>
+        <strong>{{category.name}}</strong>: 
+        Allocated: ${{category.allocated}}, 
+        Expected Spending: ${{category.expected}}, 
+        Remaining: ${{category.remaining}}
+      </li>
+    {{/each}}
+  </ul>
+  <button {{on "click" this.addBudgetCategory}}>Add Budget Category</button>
+</div>
+
+<div class="month-navigator">
+  <h2>Month Navigator</h2>
+  <button {{on "click" this.previousMonth}}>Previous</button>
+  <span>{{this.currentMonth}}</span>
+  <button {{on "click" this.nextMonth}}>Next</button>
+</div>

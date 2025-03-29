@@ -1,0 +1,5 @@
+<div class="month-navigator">
+  <button {{on "click" (fn this.previousMonth)}}>&lt; Previous</button>
+  <span>{{this.currentMonth}}</span>
+  <button {{on "click" (fn this.nextMonth)}}>Next &gt;</button>
+</div>

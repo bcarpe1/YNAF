@@ -1,0 +1,11 @@
+<div class="account-tracker">
+  <h2>Account Tracker</h2>
+  <ul>
+    {{#each this.accounts as |account|}}
+      <li>
+        <strong>{{account.name}}</strong>: ${{account.balance}}
+      </li>
+    {{/each}}
+  </ul>
+  <button {{on "click" this.addAccount}}>Add Account</button>
+</div>

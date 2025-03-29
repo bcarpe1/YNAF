@@ -1,0 +1,32 @@
+<div class="budget-category">
+  <h2>Budget Category</h2>
+  <form>
+    <div>
+      <label for="category-name">Category Name:</label>
+      <input type="text" id="category-name" placeholder="Enter category name" />
+    </div>
+    <div>
+      <label for="allocated-amount">Allocated Amount:</label>
+      <input type="number" id="allocated-amount" placeholder="Enter allocated amount" />
+    </div>
+    <div>
+      <label for="expected-spending">Expected Spending:</label>
+      <input type="number" id="expected-spending" placeholder="Enter expected spending" />
+    </div>
+    <div>
+      <label for="remaining-amount">Remaining Amount:</label>
+      <input type="number" id="remaining-amount" placeholder="Enter remaining amount" />
+    </div>
+    <button type="submit">Save Category</button>
+  </form>
+  <div class="category-summary">
+    <h3>Category Summary</h3>
+    <ul>
+      {{#each budgetCategories as |category|}}
+        <li>
+          <strong>{{category.name}}</strong>: Allocated: {{category.allocated}}, Expected: {{category.expected}}, Remaining: {{category.remaining}}
+        </li>
+      {{/each}}
+    </ul>
+  </div>
+</div>

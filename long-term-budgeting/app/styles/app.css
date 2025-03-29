@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.account-list, .budget-category-list {
+    list-style: none;
+    padding: 0;
+}
+
+.account-item, .budget-category-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 10px 0;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+
+.month-navigator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.month-navigator button {
+    background: #28a745;
+}
+
+.month-navigator button:hover {
+    background: #218838;
+}

@@ -1,2 +1,2 @@
-# YNAF
-You Need a Forecast - Longer-term budget planning tool to supplement (and integrate with) YNAB
+# MyNAB
+Companion web app for YNAB that gives me the information _I_ want to know.
